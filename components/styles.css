@@ -1,0 +1,451 @@
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+/* General Button Styles */
+.buttonn, .nav-button, .homepage-button {
+  background-color: rgba(110, 150, 158, 0.158);  
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Default font size */
+  padding: 1vh 2vw; /* Responsive padding */
+  border-radius: 10px;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.buttonn:hover, .nav-button:hover, .homepage-button:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+.buttonn:active, .nav-button:active, .homepage-button:active {
+  background-color: rgba(255, 210, 210, 0.605);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .buttonn, .nav-button, .homepage-button {
+    font-size: 0.65rem; /* Smaller font size */
+    padding: 1vh 3vw; /* Adjust padding for smaller screens */
+  }
+}
+/* Navbar Button Container */
+.navbar {
+  background-color: rgb(0, 23, 85);
+  padding: 2vh; /* Responsive padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex; /* Ensure flexbox layout */
+  justify-content: space-around; /* Evenly space buttons */
+  align-items: center;
+  gap: 2vw; /* Add 2vw gap between navbar buttons */
+}
+
+/* If you want to use margin instead of gap for individual buttons */
+.nav-button {
+  margin-right: 2vw; /* Adds a gap to the right of each button */
+}
+
+/* Remove margin from the last button if needed */
+.nav-button:last-child {
+  margin-right: 0;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Homepage Styles */
+.homepage {
+  background-color: rgb(15, 0, 125);
+  padding: 2vh 3vw;
+  text-align: center;
+}
+
+.homepage-content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.homepage-text {
+  color: white;
+  font-size: 1rem; /* Reduced text size */
+  flex: 1;
+  max-width: 100%;
+  padding-inline: 10vw; /* Responsive inline padding */
+}
+
+.homepage-text h1 {
+  font-size: 2.5rem; /* Adjusted heading size */
+}
+
+.homepage-text p {
+  font-size: 1.2rem; /* Reduced paragraph size */
+}
+
+.homepage-image {
+  width: 35%;
+  max-width: 90vw;
+  height: auto;
+  margin-left: 2vw;
+}
+
+.homepage_structure {
+  justify-content: center;
+  text-align: left;
+}
+
+.homepage_text_structure {
+  background-color: rgba(0, 0, 0, 0.073);
+  padding-inline: 10vw;
+  max-width: 100%;
+}
+
+.homepage_text {
+  font-size: 1rem;
+  padding: 1vh;
+}
+
+/* Registration Section */
+.registration_main {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking for smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+  background-color: rgb(15, 0, 125);
+  color: white;
+}
+
+.content_container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent stacking by default */
+  justify-content: center; /* Centers content */
+  align-items: center;
+  width: 100%;
+  color: white;
+  gap: 2vw; /* Adds consistent spacing between text and image */
+}
+
+.registration_section {
+  max-width: 60%; /* Reduced width slightly to align closer to the image */
+  padding: 2vh 5vw;
+  text-align: left;
+  color: white;
+}
+
+.image_section {
+  max-width: 45%; /* Reduced width slightly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration_image {
+  padding: 0; /* Removed additional padding */
+  width: 80%; /* Slightly smaller for better balance */
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.register-button {
+  background-color: white;
+  color: rgb(15, 0, 125);
+  font-weight: 700;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1vh 2vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.register-button:hover {
+  background-color: lightgrey;
+  transform : scale(1.05);
+}
+
+.register-button:active {
+  background-color: rgb(0, 23, 85);
+  transform: scale(1.02);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .content_container {
+    flex-wrap: wrap; /* Allows stacking for small screens */
+    gap: 0; /* Removes gap for smaller screens */
+  }
+
+  .registration_section {
+    max-width: 100%; /* Takes full width */
+    text-align: center; /* Center the text */
+  }
+
+  .image_section {
+    max-width: 100%; /* Takes full width */
+    margin-top: 2vh; /* Adds spacing between text and image */
+  }
+
+  .registration_image {
+    width: 70%; /* Adjust size for smaller screens */
+    max-width: 250px;
+  }
+}
+
+/* Schedule Section */
+.schedule-main {
+  padding: 5vh;
+}
+
+.schedule-heading {
+  font-size: 2.5rem;
+  color: rgb(15, 0, 125);
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 1vh;
+}
+
+.grid-column {
+  display: grid;
+  grid-template-rows: repeat(12, auto);
+  gap: 1vh;
+}
+
+.left-column {
+  max-width: 200px;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 1vh;
+  font-weight: 500;
+  font-size: larger;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+  background-color: rgb(15, 0, 125);
+  color: white;
+  padding: 1vh;
+  width: 100%;
+  text-align: center;
+}
+
+/* Directions Section */
+.directions {
+  padding: 2vh;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.directions iframe {
+  border: 2px solid #ccc;
+  width: 100%;
+  max-width: 90vw;
+  height: 45vh;
+  margin: 2vh auto;
+}
+
+.directions h2 {
+  margin-bottom: 2vh;
+  color: #333;
+}
+
+/* Organizer Section */
+.organ-container {
+  text-align: center;
+}
+
+.organ-images {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  margin: 3vh;
+}
+
+.organ img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Speaker Section */
+/* Speaker Section */
+.speaker {
+  padding: 2vh;
+  background-color: rgb(15, 0, 125);
+}
+
+.speaker h1 {
+  margin-bottom: 2vh;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.speaker p {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vw;
+}
+
+.speaker-item {
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+}
+
+.speaker-item img {
+  width: 10vw; /* Keeps the size consistent */
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1vh;
+  padding: 1vh;
+  border: 3px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .speaker-grid {
+    grid-template-columns: 1fr;
+    gap: 2vh;
+  }
+
+  .speaker-item img {
+    width: 35vw;
+    max-width: 200px;
+  }
+}
+
+/* Additional Spacing */
+.schd {
+  padding: 2vh;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .homepage-text {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .homepage-text h1 {
+    font-size: 2rem;
+  }
+  .homepage-text p {
+    font-size: 1rem;
+  }
+  .registration_section {
+    text-align: center;
+  }
+  .image_section {
+    margin-top: 2vh;
+  }
+}
+
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Schedule Container */
+.location-embed-container,
+.location-link-container {
+  padding: 5vh;
+  text-align: center;
+  background-color: white;
+  color: rgb(15, 0, 125);
+}
+
+.location-embed-container h2,
+.location-link-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2vh;
+}
+
+/* Google Maps iframe Container */
+.iframe-container {
+  width: 100%;
+  height: 500px;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Google Maps Link */
+.location-link-container a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1vh 2vw;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.location-link-container a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+.location-link-container a:active {
+  background-color: rgba(255, 210, 210, 0.605);
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .location-embed-container h2,
+  .location-link-container h2 {
+    font-size: 2rem;
+  }
+
+  .location-link-container a {
+    font-size: 1rem;
+    padding: 1vh 3vw;
+  }
+
+  .iframe-container {
+    margin-top: 2vh;
+    height: 300px;
+  }
+}
