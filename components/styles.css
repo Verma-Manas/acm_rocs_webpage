@@ -132,31 +132,31 @@ html {
 
 .content_container {
   display: flex;
-  flex-wrap: nowrap; /* Prevent stacking by default */
-  justify-content: center; /* Centers content */
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   width: 100%;
   color: white;
-  gap: 2vw; /* Adds consistent spacing between text and image */
+  gap: 2vw;
 }
 
 .registration_section {
-  max-width: 60%; /* Reduced width slightly to align closer to the image */
+  max-width: 60%;
   padding: 2vh 5vw;
   text-align: left;
   color: white;
 }
 
 .image_section {
-  max-width: 45%; /* Reduced width slightly */
+  max-width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .registration_image {
-  padding: 0; /* Removed additional padding */
-  width: 80%; /* Slightly smaller for better balance */
+  padding: 0;
+  width: 80%;
   max-width: 280px;
   height: auto;
   border-radius: 8px;
@@ -313,7 +313,7 @@ html {
 
 .speaker-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2vw;
 }
 
