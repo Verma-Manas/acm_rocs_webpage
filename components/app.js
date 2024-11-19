@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Footer from "./footer";
-import HomePage from "./homepage";
-import WorkshopDetails from "./homepage_text";
-import Navbar from "./navbar";
-import Organisers from "./organisers";
-import WorkshopRegistration from "./registration";
-import Schedule from "./schedule";
-import Speak from "./speaker";
+import Footer from "./components/footer";
+import HomePage from "./components/homepage";
+import WorkshopDetails from "./components/homepage_text";
+import Navbar from "./components/navbar";
+import Organisers from "./components/organisers";
+import WorkshopRegistration from "./components/registration";
+import Schedule from "./components/schedule";
+import Speak from "./components/speaker";
 import "./styles.css";
 const App = () => {
     return (
