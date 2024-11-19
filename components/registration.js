@@ -12,11 +12,16 @@ const WorkshopRegistration = () => {
             We cordially invite undergraduate and postgraduate students from Computer Science and Mathematics to apply for participation in the workshop.
           </p>
           <br />
-          <a href="https://in.explara.com/e/research-opportunities-in-computer-science-at-model-institute-of-engineering-and-technology-miet--jammu" style={{ textDecoration: "none" }}>
-            <button className="register-button">
-              Register Now
-            </button>
-          </a>
+          <a
+  href="https://in.explara.com/e/research-opportunities-in-computer-science-at-model-institute-of-engineering-and-technology-miet--jammu"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none" }}
+>
+  <button className="register-button">
+    Register Now
+  </button>
+</a>
           <p style={{ fontSize: '1.05rem', marginTop: '1rem' }}>» Last Day to apply is 28th November 2024.</p>
           <p style={{ fontSize: '1.05rem' }}>» Registration fee is Rs. 200/- + GST</p>
         </div>
